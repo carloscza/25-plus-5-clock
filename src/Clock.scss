@@ -1,0 +1,90 @@
+.title-heading-container
+{
+    width:  260px;
+}
+
+.title
+{
+    margin:  0;
+    padding: 0;
+    font-size: 40px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.setter-controls-container
+{
+    display:   flex;
+    gap:       80px;
+    max-width: 600px;
+}
+
+.label-and-btns-container
+{
+    display:         flex;
+    flex-direction:  column;
+    justify-content: center;
+    align-items:     center;
+    font-size:       23px;
+}
+
+.timer-setter-btns
+{
+    display:        flex;
+    flex-direction: row;
+    align-items:    center;
+    gap:            5px;
+    font-size:      22px;
+}
+
+.increment-decrement-btn
+{
+    @extend .btn;
+    height: 30px;
+
+    i 
+    {
+        font-size: 22px;
+    }
+}
+
+.btn
+{
+    color: white;
+    border:  none;
+    cursor:  pointer;
+    background-color: transparent;
+
+    &:hover
+    {
+        color: #5CE1E6;
+    }
+}
+
+.timer
+{
+    border: 7px solid #13353A;
+    padding: 15px ;
+    border-radius: 55px;
+    max-width: 270px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+    label 
+    {
+        font-size: 25px;
+    }
+    
+    p 
+    {
+        font-size: 80px;
+        margin: 0 30px;
+    }
+}
+
+.timer-control
+{
+    @extend .btn;
+    font-size: 30px;
+}
