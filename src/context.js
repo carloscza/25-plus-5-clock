@@ -4,18 +4,23 @@ const ClockContext = createContext({});
 
 export default function ClockContextProvider({children})
 {
-    const [ sessionLength, setSessionLength ] = useState(25);
-    const [ breakLength,   setBreakLength   ] = useState(5);
-    const [ timer, setTimer ] = useState(sessionLength);
+    const initialState =
+    {
+        sessionLength: 25,
+        breakLength: 5,
+        timer: 25,
+        seconds: 0,
+        timerState: false,
+        currTime: true
+    };
+
+    const [ state, setState ] = useState(initialState);
 
     const contextValue = 
     {
-        sessionLength,
-        setSessionLength,
-        breakLength,
-        setBreakLength,
-        timer,
-        setTimer
+        state,
+        setState,
+        initialState
     };
 
     return (

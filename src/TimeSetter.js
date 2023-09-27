@@ -6,16 +6,16 @@ export default function TimeSetter(props)
 {
     return ( 
         <section className='label-and-btns-container'>
-            <label id={props.timerName + '-label'}>
+            <label id={props.lengthName + '-label'}>
                 {props.timerName} Length
             </label>
             <div className='timer-setter-btns'>
-                <button  value="999"className='increment-decrement-btn' onClick={props.onDecrementClick}>
-                    <i id={props.buttonId + "Decrement"} className='fa-solid fa-arrow-down' ></i>
+                <button id={props.lengthName+'-decrement'}className='increment-decrement-btn' onClick={props.onDecrementClick}>
+                    <i className='fa-solid fa-arrow-down'></i>
                 </button>
-                <p>{props.time}</p>
-                <button name={props.timerName}className='increment-decrement-btn'>
-                    <i id={props.buttonId + "Increment"} className='fa-solid fa-arrow-up' onClick={props.onIncrementClick}></i>
+                <p id={props.lengthName + "-length"}>{props.time}</p>
+                <button id={props.lengthName+'-increment'} className='increment-decrement-btn' onClick={props.onIncrementClick}>
+                    <i className='fa-solid fa-arrow-up'></i>
                 </button>
             </div>
         </section>
