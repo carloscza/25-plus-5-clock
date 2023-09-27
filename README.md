@@ -15,6 +15,7 @@ A simple 25 + 5 Clock app.
 ### Motivation
 
 The purpose of this project was to practice building with React, React Hooks, and Redux.
+[view the project here](https://carloscza.github.io/25-plus-5-clock/)
 
 ## Install
 
